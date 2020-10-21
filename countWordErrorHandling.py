@@ -9,4 +9,4 @@ count = 0
 for line in fhand:
     if line.startswith('Subject: '):
         count = count + 1
-    prunt('There were', count, 'subject lines in', fname)
+    print('There were', count, 'subject lines in', fname)
