@@ -13,16 +13,18 @@ for lin in hand:
     # print(wds)
     for lin in hand:
         oldcount = di.get(lin,0)
-        print(lin,'old',oldcount)
+       # print(lin,'old',oldcount)
         newcount = oldcount + 1
         di[lin] = newcount
-        print(lin,'new', newcount)
+       # print(lin,'new', newcount)
 
     largest = -1
+    theword = None
     for k,v in di.items() :
-        print(k,v)
+        # print(k,v)
         if v > largest :
             largest = v
+            theword = k
     print('Largest - ', k,largest)
 
     smallest = 2
